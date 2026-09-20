@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middlewares
 app.use(cors({
-  origin: 'https://abdullah-portfolio-lovat-five.vercel.app',
+  origin: '*', // Allows frontend on any port to access backend APIs (essential for development)
   credentials: true
 }));
 app.use(express.json());
